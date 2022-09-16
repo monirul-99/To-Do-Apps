@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --bg-dark: #212534;
+    --bg-blue-dark: #191C29;
+    --rounded-md: 10px;
+    --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    max-width: 100%;
+    height: 100vh;
+    background-color: var(--bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card-design{
+    width: 80%;
+    height: 80vh;
+    border-radius: var(--rounded-md);
+    background-color: var(--bg-blue-dark);
+}
+
+h3.title-text {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-weight: 100;
+    text-transform: capitalize;
+    margin-top: 35px;
+}
+
+.inputBarDesign {
+    width: 30%;
+    padding: 1rem;
+    outline: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.add-list-btn {
+    width: 12%;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.new-task-input {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
