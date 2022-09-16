@@ -5,6 +5,9 @@
     --bg-blue-dark: #191C29;
     --rounded-md: 10px;
     --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --gray:#eee;
+    --pink:#ec4899;
+    --purple:#8b5cf6;
 }
 
 *{
@@ -68,6 +71,7 @@ h3.title-text {
 }
 
 .list-note-area{
+    position: relative;
     width: 90%;
     margin: auto;
 }
@@ -81,11 +85,39 @@ h3.title-text {
 }
 
 .list-of-note{
-    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .single-list {
-    width: 25%;
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 15px;
+    outline: none;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.three-col {
+    width: 100%;
+    position: absolute;
+    top: 150%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+button.edit {
+    padding: 0.7rem;
+    font-size: 15px;
+}
+
+.actions {
+    display: flex;
+}
+
+button.delete {
     padding: 0.7rem;
     font-size: 15px;
 }
