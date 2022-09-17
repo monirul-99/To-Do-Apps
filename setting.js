@@ -35,13 +35,16 @@ document.getElementById('add').addEventListener('click', function(){
 	editBtn.addEventListener('click', () => {
 		if (editBtn.innerText.toLowerCase() == "edit") {
 			editBtn.innerText = "Save";
-			editBtn.style.cursor = 'pointer'
 			inputCreate.removeAttribute("readonly");
 			inputCreate.focus();
 		} else {
 			editBtn.innerText = "Edit";
 			inputCreate.setAttribute("readonly", "readonly");
 		}
+	});
+
+	deleteBtn.addEventListener('click', () => {
+		parentDiv.removeChild(listParentCreate);
 	});
 })
 
