@@ -115,6 +115,7 @@ button.edit {
     background: none;
     border: none;
     color: white;
+    cursor: pointer;
 }
 
 .actions {
@@ -127,6 +128,7 @@ button.delete {
     background: none;
     border: none;
     color: white;
+    cursor: pointer;
 }
 
 .single-list:not(:read-only){
